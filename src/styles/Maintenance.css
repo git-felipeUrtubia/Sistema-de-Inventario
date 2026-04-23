@@ -1,0 +1,63 @@
+.maintenance-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Centrado vertical en el área de contenido */
+    text-align: center;
+    color: #2c3e50;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.maintenance-icon-wrapper {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.icon-main {
+    color: #3498db; /* Azul de tu Navbar */
+    animation: pulse 2s infinite ease-in-out;
+}
+
+.icon-sub {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    color: #f1c40f; /* Amarillo de advertencia */
+}
+
+.maintenance-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.maintenance-text {
+    font-size: 16px;
+    color: #7f8c8d;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+.btn-back-home {
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-back-home:hover {
+    background-color: #2980b9;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+    100% { transform: scale(1); opacity: 1; }
+}

@@ -1,0 +1,21 @@
+/* Botón normal en la pantalla */
+.btn-print-all {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-print-all:hover {
+    background-color: #219150;
+}
+
+

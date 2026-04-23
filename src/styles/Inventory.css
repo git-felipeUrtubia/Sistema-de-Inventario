@@ -1,0 +1,234 @@
+.inventory-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.inventory-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-input {
+    padding: 0.6rem 1rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Alineación central para títulos y celdas */
+.inventory-table th,
+.inventory-table td {
+    padding: 1rem;
+    text-align: center; /* Centra el texto en todas las columnas */
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.inventory-table th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 600;
+}
+
+/* Contenedor de botones de acción centrado */
+.actions-cell {
+    display: flex;
+    gap: 8px;
+    justify-content: center; /* Centra los botones horizontalmente */
+    align-items: center;
+}
+
+/* Contenedor de código de barras centrado */
+.barcode-cell {
+    display: flex;
+    flex-direction: column; /* Apila el SVG y el texto si es necesario */
+    justify-content: center; 
+    align-items: center;     
+    min-width: 150px;
+}
+
+.barcode-cell svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.inventory-table th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 600;
+}
+
+.badge {
+    background: #e9ecef;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.low-stock {
+    color: #d63031;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #2980b9;
+}
+
+/* ... Estilos anteriores ... */
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-delete {
+  background-color: #ff4757;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete:hover { background-color: #ff6b81; }
+
+/* MODAL STYLES */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-content h2 { margin-top: 0; color: #2c3e50; }
+
+.modal-content label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistencia con Windows */
+  font-size: 0.9rem;
+  background-color: white;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto al hacer clic o foco */
+.modal-content input:focus,
+.modal-content select:focus {
+  border-color: #3498db; /* Azul acorde a tus botones de edición */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Estilo específico para el select para quitar la apariencia nativa aburrida */
+.modal-content select {
+  cursor: pointer;
+  appearance: none; /* Quita el estilo por defecto en algunos navegadores */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.modal-actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.btn-save { background: #2ecc71; color: white; border: none; padding: 0.7rem 1.2rem; border-radius: 6px; cursor: pointer; }
+.btn-cancel { background: #95a5a6; color: white; border: none; padding: 0.7rem 1.2rem; border-radius: 6px; cursor: pointer; }
+
+/* Contenedor del scroll */
+
+
+.table-wrapper {
+    max-height: 500px; /* Ajustado para 5 filas + el encabezado */
+    overflow-y: auto;  /* Muestra el scroll solo si es necesario */
+    border: 1px solid #e0e4e8;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Hacer que el encabezado sea pegajoso (Sticky Header) */
+.inventory-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #2c3e50; /* El color oscuro de tu tabla */
+}
+
+/* Opcional: Estilizar la barra de scroll para que se vea más Pro */
+.table-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #3498db; /* Color azul de tus botones */
+}

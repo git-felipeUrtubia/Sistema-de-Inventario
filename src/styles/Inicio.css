@@ -1,0 +1,87 @@
+.inicio-container {
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.inicio-welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+}
+
+.welcome-text h1 { margin: 0; font-size: 1.8rem; }
+.welcome-text p { margin: 10px 0 0 0; opacity: 0.9; }
+
+.inicio-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+
+/* Card de Estadísticas con borde reforzado */
+.stat-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    
+    /* Borde sólido y notorio */
+    border: 2px solid #cbd5e0; 
+    /* Acento lateral más ancho para mayor peso visual */
+    border-left: 8px solid #3498db; 
+    
+    /* Sombra con más opacidad para dar profundidad sobre blanco */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+/* Card de Acción (Imprimir) con borde reforzado */
+.action-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    
+    /* Mismo estilo de borde que la anterior */
+    border: 2px solid #cbd5e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+/* Efecto Hover para que se sienta interactivo en Windows */
+.stat-card:hover, .action-card:hover {
+    transform: translateY(-4px);
+    border-color: #3498db; /* El borde se ilumina al pasar el mouse */
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.2);
+}
+
+.action-card h3 { 
+    margin-top: 0; 
+    color: #2c3e50;
+    border-bottom: 2px solid #f1f5f9; /* Línea divisoria interna */
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.action-card h3 { margin-top: 0; color: #34495e; }
+.action-card p { color: #7f8c8d; font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+.action-button-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

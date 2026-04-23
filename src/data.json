@@ -1,0 +1,23 @@
+
+[
+  { "id": 1, "nombre": "Laptop Gamer Pro i7 RTX 3060", "categoria": "Electrónica", "precio": 1250000, "stock": 15 },
+  { "id": 2, "nombre": "Monitor Asus 27' 4K UHD", "categoria": "Accesorios", "precio": 380000, "stock": 8 },
+  { "id": 3, "nombre": "Teclado Mecánico RGB Switch Red", "categoria": "Periféricos", "precio": 85000, "stock": 25 },
+  { "id": 4, "nombre": "Mouse Inalámbrico Logitech G502", "categoria": "Periféricos", "precio": 45900, "stock": 40 },
+  { "id": 5, "nombre": "Silla Ergonómica Gamer Negra", "categoria": "Muebles", "precio": 210000, "stock": 10 },
+  { "id": 6, "nombre": "Disco Duro SSD NVMe 1TB Samsung", "categoria": "Almacenamiento", "precio": 110000, "stock": 30 },
+  { "id": 7, "nombre": "Memoria RAM 16GB DDR4 3200MHz", "categoria": "Componentes", "precio": 75000, "stock": 22 },
+  { "id": 8, "nombre": "Procesador Intel Core i7-11700K", "categoria": "Componentes", "precio": 320000, "stock": 5 },
+  { "id": 9, "nombre": "Webcam Logitech C920 1080p", "categoria": "Accesorios", "precio": 65000, "stock": 18 },
+  { "id": 10, "nombre": "Auriculares Sony Noise Cancelling", "categoria": "Audio", "precio": 190000, "stock": 12 },
+  { "id": 11, "nombre": "Placa Madre ASUS Prime H510M-E", "categoria": "Componentes", "precio": 85000, "stock": 7 },
+  { "id": 12, "nombre": "Gabinete Mid-Tower Vidrio Templado", "categoria": "Componentes", "precio": 55000, "stock": 14 },
+  { "id": 13, "nombre": "Fuente de Poder 750W 80+ Gold", "categoria": "Componentes", "precio": 95000, "stock": 9 },
+  { "id": 14, "nombre": "Tarjeta de Video RTX 3050 8GB", "categoria": "Componentes", "precio": 280000, "stock": 4 },
+  { "id": 15, "nombre": "Pad Mouse Extendido 90x40cm", "categoria": "Accesorios", "precio": 15000, "stock": 50 },
+  { "id": 16, "nombre": "Micrófono Condensador USB HyperX", "categoria": "Audio", "precio": 115000, "stock": 11 },
+  { "id": 17, "nombre": "Control Xbox Series X Carbon Black", "categoria": "Accesorios", "precio": 59900, "stock": 20 },
+  { "id": 18, "nombre": "Parlantes 2.1 Edifier Bluetooth", "categoria": "Audio", "precio": 135000, "stock": 6 },
+  { "id": 19, "nombre": "Router TP-Link Archer WiFi 6", "categoria": "Electrónica", "precio": 78900, "stock": 15 },
+  { "id": 20, "nombre": "Soporte Brazo Monitor Hidráulico", "categoria": "Muebles", "precio": 42000, "stock": 25 }
+]

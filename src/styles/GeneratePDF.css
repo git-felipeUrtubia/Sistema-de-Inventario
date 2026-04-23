@@ -1,0 +1,103 @@
+/* Contenedor Principal */
+.pdf-generator-container {
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header: Alineación del botón y título */
+.pdf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.header-spacer { width: 120px; } /* Mismo ancho que el botón para centrar perfecto el H2 */
+
+.container-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.main-title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.btn-volver {
+    background-color: #ff004c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+}
+
+.btn-download {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 120px;
+}
+
+/* Grid de códigos de barras */
+.barcode-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* ELIMINADO: gap: 20px; */
+    padding: 10px;
+    padding-bottom: 50px; /* NUEVO: Le da un "respiro" al final del lienzo para que no corte el último elemento */
+}
+
+.barcode-card {
+    width: 280px; 
+    flex-grow: 1; 
+    max-width: 320px; 
+    
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    
+    display: block; 
+    text-align: center; 
+    
+    /* NUEVO: Reemplaza al gap y es más fácil de calcular para el PDF */
+    margin: 10px; 
+    box-sizing: border-box; 
+
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+}
+
+.product-name {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Ocultar el título del PDF en la pantalla si prefieres */
+.pdf-only-title {
+    display: none; 
+}
+
+/* Ajustes específicos para cuando html2pdf captura el contenido */
+@media print {
+    .pdf-only-title {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
