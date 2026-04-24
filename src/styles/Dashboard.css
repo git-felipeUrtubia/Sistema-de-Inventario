@@ -1,0 +1,200 @@
+.panel-control-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #333;
+}
+
+.panel-control-header {
+  margin-bottom: 24px;
+}
+
+.panel-control-title {
+  margin: 0;
+  font-size: 28px;
+  color: #111827;
+}
+
+.panel-control-subtitle {
+  margin: 4px 0 0 0;
+  color: #6b7280;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.metric-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-card.alert {
+  border-left: 4px solid #ef4444;
+}
+
+.card-title {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.card-value {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.card-value.alert-text {
+  color: #ef4444;
+}
+
+.panel-control-content {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.table-section {
+  flex: 2;
+}
+
+.actions-section {
+  flex: 1;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.sales-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.sales-table th {
+  padding: 12px 8px;
+  border-bottom: 2px solid #e5e7eb;
+  color: #374151;
+  font-weight: 600;
+}
+
+.sales-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #f3f4f6;
+  color: #4b5563;
+}
+
+.sales-table tr:hover {
+  background-color: #f9fafb;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-primary {
+  padding: 12px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  padding: 12px;
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #e5e7eb;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.reporte-section {
+  /* Alineación para que coincida con el contenedor principal */
+  max-width: 1200px;
+  margin: 0 auto; /* Centra la sección en la pantalla */
+  padding: 0 24px 24px 24px; /* Iguala el padding lateral del Dashboard */
+  
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #333;
+}
+
+.reporte-section h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+  font-weight: 600;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+/* --- Estilo para el botón de Detalle en la tabla --- */
+.btn-detalle {
+  padding: 6px 12px;
+  background-color: #f8fafc; /* Un fondo gris muy sutil */
+  color: #3b82f6; /* Texto azul para indicar que es clickeable/interactivo */
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.btn-detalle:hover {
+  background-color: #eff6ff; /* Un fondo azul muy clarito */
+  border-color: #bfdbfe;
+  color: #2563eb; /* Azul más oscuro */
+}
+
+/* Pequeño efecto de "hundimiento" al hacer clic */
+.btn-detalle:active {
+  transform: scale(0.96);
+}

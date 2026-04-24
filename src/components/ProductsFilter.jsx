@@ -82,7 +82,6 @@ export const ProductsFilter = ({ productos = [] }) => {
             value={codigo}
             onChange={(e) => setCodigo(e.target.value)}
             className="filter-input scan-input"
-            autoFocus // Opcional: auto-enfoca este campo al cargar
           />
         </div>
 

@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Box, PlusSquare, Settings } from 'lucide-react';
+import { GrDashboard } from "react-icons/gr";
 import '../styles/Navbar.css';
 
 export const Navbar = () => {
@@ -31,6 +32,14 @@ export const Navbar = () => {
         >
           <Box className="nav-icon" />
           Inventario
+        </button>
+
+        <button 
+          onClick={() => navigate('/dashboard')} 
+          className={`nav-button ${isActive('/dashboard') ? 'active' : ''}`}
+        >
+          <GrDashboard className="nav-icon" />
+          Dashboard
         </button>
         
         <button 

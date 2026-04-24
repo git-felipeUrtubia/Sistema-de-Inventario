@@ -1,0 +1,23 @@
+[
+    {
+        "id_reporte": 1,
+        "tipo_reporte": "promedio/dia",
+        "monto_promedio": 45000,
+        "producto_mas_vendido": "Cargador Tipo C",
+        "tendencia": 12
+    },
+    {
+        "id_reporte": 2,
+        "tipo_reporte": "promedio/mes",
+        "monto_promedio": 1350000,
+        "producto_mas_vendido": "Smartphone Modelo X10",
+        "tendencia": 5
+    },
+    {
+        "id_reporte": 3,
+        "tipo_reporte": "promedio/annio",
+        "monto_promedio": 16200000,
+        "producto_mas_vendido": "Tablet Redmi Pad Pro",
+        "tendencia": -2
+    }
+]

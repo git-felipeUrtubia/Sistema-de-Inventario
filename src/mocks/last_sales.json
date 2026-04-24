@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "cant": 5,
+    "total": 25000,
+    "fecha": "24-04-2026",
+    "metodo": "Efectivo"
+  },
+  {
+    "id": 2,
+    "cant": 4,
+    "total": 12500,
+    "fecha": "24-04-2026",
+    "metodo": "Tarjeta"
+  },
+  {
+    "id": 3,
+    "cant": 1,
+    "total": 8900,
+    "fecha": "24-04-2026",
+    "metodo": "Efectivo"
+  },
+  {
+    "id": 4,
+    "cant": 6,
+    "total": 45000,
+    "fecha": "24-04-2026",
+    "metodo": "Transferencia"
+  }
+]

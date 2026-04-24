@@ -6,6 +6,7 @@ import { MainLayout } from '../components/MainLayout';
 import { Ajustes } from '../pages/Ajustes';
 import { GeneratePDF } from '../components/GeneratePDF';
 import { useProduct } from '../hooks/useProduct';
+import { Dashboard } from '../pages/Dashboard';
 
 export const AppRoutes = () => {
 
@@ -17,6 +18,7 @@ export const AppRoutes = () => {
         <Route path="/" element={<Navigate to="/inicio" replace />} />
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/inventory" element={<Inventory />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/add-product" element={<AddProduct />} />
         <Route path="/ajustes" element={<Ajustes />} />
 
